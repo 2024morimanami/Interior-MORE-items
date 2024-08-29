@@ -1,0 +1,310 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #4e440a;
+}
+body{
+    font-family: "Kiwi Maru", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+header{
+    background-color: #d0dfde;
+    padding-bottom: 20px;
+}
+#gnav ul{
+  display: flex;
+  justify-content: right;
+  padding: 40px 10px 20px;
+}
+iframe{width: 100%;
+}
+.title{
+    width: 300px;
+    margin: 0 auto;
+}
+h1{
+  font-size: 40px;
+  color: #8f8236;
+}
+p{padding-bottom: 12px;
+
+}
+span{
+  font-size: 1.2em;
+  padding: 0 5px;
+  color: #20b2aa;
+}
+section{
+  padding: 60px 0;
+}
+
+.container{
+    width: 1180px;
+    margin: 0 auto;
+}
+section h2{
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 1.6em;
+}
+ul{
+    list-style: none;
+}
+a{
+  font-weight: 600;
+  margin:0 15px;
+}
+a:hover{
+  color: #20b2aa;
+}
+#sec1,#sec3{
+    background-color: #f5f7e5;
+}
+#sec2{
+    background-color: #d0dfde;
+}
+.concept{
+  display: flex;
+  flex-wrap: wrap;
+}
+.concept img{
+  width: 50%;
+}
+.concept-text{
+  width: 50%;
+  padding: 30px;
+}
+.concept-text p{
+  padding: 20px;
+}
+.item-box-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item-box{
+  background-color: #e0ecea;
+  width: 250px;
+  padding: 15px;
+  border-radius: 15px;
+}
+.item-box img{
+  border-radius: 50%;
+}
+.item-box h3{
+  font-size: 1.2em;
+  padding: 10px;
+  color: #20b2aa;
+  text-align: center;
+}
+.item-box img{
+  width: 100%;
+}
+.item-box p{
+  font-size: 0.9em;
+  padding: 5px;
+  text-align: justify;
+}
+.btn{
+  background-color: #e0ecea;
+  display: block;
+  width: 150px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  margin: 50px auto 0;
+  text-align: center;
+  box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, .4);
+}
+.shop-info th{
+  text-align: left;
+  padding: 5px 30px;
+}
+footer{
+  background-color: #d0dfde;
+  padding: 60px 0;
+  text-align: center;
+}
+.footer-nav ul{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+#pagetop{
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+}
+#pagetop img{
+  width: 50px;
+}
+.shop-info th{
+  text-align: left;
+  padding: 5px 30px;
+}
+/* AboutページのCSS */
+section h2, .txcenter{
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 1.6em;
+}
+.company-pro{
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+.company-pro th{
+  width: 20%;
+  padding: 15px 10px;
+  border: solid #c5cec4;
+}
+.table-title{
+  font-size: 1.4em;
+  text-align: center;
+}
+.company-pro td{
+  border: solid #c5cec4;
+  padding: 15px 10px;
+}
+/* ItemsページのCSS */
+#item-sec1{
+  background-image: url(images/item-img/item-top.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  position: relative;
+  text-align: center;
+}
+#item-sec1::before{
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  background-color: rgba(235, 254,255,.3);
+}
+#item-sec1 .main-tt1{
+  position: inherit;
+  z-index: 2;
+}
+#item-sec1 .main-txt strong{
+  font-size: 5em;
+  color: #ed40b9;
+}
+#item-sec1 .sub-txt{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #20b2aa;
+  padding: 50px 10px;
+}
+.clearfix{
+  width: 32%;
+}
+.clearfix h2{
+  color: #20b2aa;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.clearfix img{
+  width: 180px;
+  border-radius: 50%;
+  margin: 20px;
+  float: right;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.flex{
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex img{
+  width: 20%;
+  margin: 10px;
+}
+#item-sec1,#item-sec2,#item-sec3,#item-sec4,#item-sec5{
+  background-color: #f5f7e5; 
+}
+/* タブレットCSS */
+@media (max-width:960px){
+  .container{
+    width: 90%;
+  }
+  #sec1 h1{
+    margin-bottom: 30px;
+  }
+  .title img{
+    width: 100%;
+  }
+  .item-box{
+    width: 48%;
+    margin: 10px auto;
+  }
+  .clearfix{
+    width: 54%;
+  }
+  .clearfix h2{
+    color: #20b2aa;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  /* .concept img{
+    width: 100%;
+  } */
+}
+@media(max-width:768px){
+  #sec1 h1{
+    text-align: center;
+  }
+  .title{
+    padding: 30px 0;
+  }
+  #gnav ul{
+    justify-content: center;
+  }
+ .concept img{
+    width: 100%;
+  }
+  .concept-text{
+    width: 100%;
+    padding: 30px 0;
+  }
+  .item-box{
+    width: 100%;
+    margin: 10px;
+  }
+  .info{
+    font-size: 0.9em;
+  }
+  footer{
+    padding: 30px;
+  }
+  .footer-nav ul{
+    padding: 5px 10px 20px;
+  }
+  .footer-nav a{
+    font-size: 0.8em;
+    margin: 0 5px;
+    padding: 2px;
+  }
+  #pagetop img{
+    display: none;
+  }
+  .clearfix{
+    width: 100%;
+  }
+  .flex img{
+    width: 100%;
+  }
+}
